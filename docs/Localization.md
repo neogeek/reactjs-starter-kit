@@ -17,3 +17,15 @@ const locale = key => {
 
 export default locale;
 ```
+
+```javascript
+render () {
+
+    return (
+        <div>
+            <h1>{locale('hello-world')}</h1>
+        </div>
+    );
+
+}
+```

@@ -20,3 +20,7 @@ const requireAuth = (nextState, replace) => {
 
 };
 ```
+
+```javascript
+<Route name="profile" path="profile" component={ProfileView} onEnter={requireAuth} />
+```
