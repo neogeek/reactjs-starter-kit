@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "doxdox": "2.0.2",
+    "express": "4.14.1",
+    "node-sass": "4.5.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-router": "3.0.2",
+    "spire-of-babel": "1.1.22"
+  },
+  "devDependencies": {
+    "@neogeek/eslint-config-standards": "1.13.0",
+    "eslint": "3.15.0"
+  },
+  "scripts": {
+    "serve": "node server.js",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "node-sass ./src/css/ --source-map true --output ./static/css/",
+    "watch:css": "node-sass ./src/css/ --source-map true --watch ./src/css/ --output ./static/css/",
+    "build:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --output ./static/js/build.min.js",
+    "watch:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js"
+  }
+}

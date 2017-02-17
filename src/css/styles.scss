@@ -1,0 +1,21 @@
+@import "base";
+
+#site-wrapper {
+    margin: 2rem auto;
+    max-width: 50rem;
+}
+
+.logo {
+
+    display: block;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.site-navigation {
+    margin: 1rem 0;
+}
