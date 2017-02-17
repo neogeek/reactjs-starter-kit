@@ -1,5 +1,9 @@
 {
   "extends": [
     "@neogeek/eslint-config-standards"
-  ]
+  ],
+  "rules": {
+    "no-unused-vars": 0,
+    "sort-imports": 0
+  }
 }

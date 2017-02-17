@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
+    browserHistory,
     IndexRoute,
-    Router,
     Route,
-    browserHistory
+    Router
 } from 'react-router';
 
 import AboutView from './views/about';
