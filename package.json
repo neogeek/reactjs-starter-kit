@@ -14,6 +14,7 @@
   },
   "scripts": {
     "serve": "node server.js",
+    "lint": "eslint 'src/**/*.jsx'",
     "build": "npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --source-map true --output ./static/css/",
     "watch:css": "node-sass ./src/css/ --source-map true --watch ./src/css/ --output ./static/css/",
