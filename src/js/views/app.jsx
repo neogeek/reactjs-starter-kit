@@ -13,6 +13,7 @@ const AppView = React.createClass({
                         <img src="/images/logo.png" alt="React.js Starter Kit" />
                     </Link>
                     <nav className="site-navigation">
+                        <Link to="/">Home</Link>
                         <Link to="/about/">About</Link>
                     </nav>
                 </header>

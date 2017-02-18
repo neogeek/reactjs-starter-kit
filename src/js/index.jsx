@@ -8,16 +8,11 @@ import {
     Router
 } from 'react-router';
 
-import AboutView from './views/about';
-import AppView from './views/app';
-import WelcomeView from './views/welcome';
+import Routes from './routes';
 
 ReactDOM.render(
     <Router history={browserHistory}>
-        <Route name="app" path="/" component={AppView}>
-            <IndexRoute name="welcome" component={WelcomeView} />
-            <Route name="about" path="about" component={AboutView} />
-        </Route>
+        {Routes}
     </Router>,
     document.getElementById('site-wrapper')
 );

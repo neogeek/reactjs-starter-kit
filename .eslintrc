@@ -3,6 +3,8 @@
     "@neogeek/eslint-config-standards"
   ],
   "rules": {
+    "no-console": 0,
+    "no-magic-numbers": 0,
     "no-unused-vars": 0,
     "sort-imports": 0
   }
