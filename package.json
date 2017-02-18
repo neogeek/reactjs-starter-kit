@@ -16,8 +16,8 @@
     "serve": "node server.js",
     "lint": "eslint 'src/**/*.jsx'",
     "build": "npm run build:css && npm run build:js",
-    "build:css": "node-sass ./src/css/ --source-map true --output ./static/css/",
-    "watch:css": "node-sass ./src/css/ --source-map true --watch ./src/css/ --output ./static/css/",
+    "build:css": "node-sass ./src/css/ --output ./static/css/",
+    "watch:css": "node-sass ./src/css/ --watch ./src/css/ --output ./static/css/",
     "build:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --output ./static/js/build.min.js",
     "watch:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js"
   }
