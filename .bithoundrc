@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "unused-ignores": [
+      "babel-cli",
+      "doxdox",
+      "ejs",
+      "node-sass",
+      "spire-of-babel"
+    ]
+  }
+}
