@@ -1,0 +1,13 @@
+{
+  "name": "React.js Starter Kit",
+  "description": "This repo is a starter kit for working with React.js and ES6.",
+  "repository": "https://github.com/neogeek/reactjs-starter-kit",
+  "keywords": [
+    "node",
+    "babel",
+    "express",
+    "react",
+    "sass",
+    "eslint"
+  ]
+}
