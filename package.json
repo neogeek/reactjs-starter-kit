@@ -22,10 +22,10 @@
     "eslint": "3.15.0"
   },
   "scripts": {
-    "start": "npm run build:src && node dist/server.js",
+    "start": "npm run build && node dist/server.js",
     "serve": "babel-node server.js --presets es2015,react",
     "lint": "eslint 'src/**/*.jsx'",
-    "build": "npm run build:css && npm run build:js",
+    "build": "npm run build:src && npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --output ./static/css/",
     "watch:css": "node-sass ./src/css/ --watch ./src/css/ --output ./static/css/",
     "build:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --output ./static/js/build.min.js",
