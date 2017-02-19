@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-Run the following command to download the repo and unpack it into `/reactjs-starter-kit-master`.
+Run the following command to download the repo and unpack it into `reactjs-starter-kit-master/`.
 
 ```bash
 $ curl -L https://github.com/neogeek/reactjs-starter-kit/archive/master.tar.gz | tar -xz
