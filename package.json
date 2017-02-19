@@ -1,4 +1,11 @@
 {
+  "name": "@neogeek/reactjs-starter-kit",
+  "version": "0.0.1",
+  "description": "This repo is a starter kit for working with React.js and ES6.",
+  "engines": {
+    "node": ">=7.0"
+  },
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "6.23.0",
     "doxdox": "2.0.2",
@@ -24,5 +31,18 @@
     "build:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --output ./static/js/build.min.js",
     "watch:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
     "build:src": "babel src -d dist --presets es2015,react"
-  }
+  },
+  "keywords": [
+    "node",
+    "babel",
+    "express",
+    "react",
+    "sass",
+    "eslint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neogeek/reactjs-starter-kit.git"
+  },
+  "private": true
 }
