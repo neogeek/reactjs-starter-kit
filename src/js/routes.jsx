@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {
-    Route
-} from 'react-router';
+import {Route} from 'react-router-dom';
 
 import AboutView from './views/about';
 import AppView from './views/app';
