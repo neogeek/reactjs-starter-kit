@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {
-    browserHistory,
-    IndexRoute,
-    Route,
-    Router
-} from 'react-router';
+import {Router} from 'react-router';
+
+import createBrowserHistory from 'history/createBrowserHistory';
+
+const history = createBrowserHistory();
 
 import Routes from './routes';
 
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <Router history={history}>
         {Routes}
     </Router>,
     document.getElementById('site-wrapper')

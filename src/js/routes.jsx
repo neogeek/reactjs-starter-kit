@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {
-    IndexRoute,
     Route
 } from 'react-router';
 
@@ -16,7 +15,7 @@ export {
     WelcomeView
 };
 
-export default <Route name="app" path="/" component={AppView}>
-    <IndexRoute name="welcome" component={WelcomeView} />
-    <Route name="about" path="about" component={AboutView} />
-</Route>;
+export default <AppView>
+    <Route exact path="/" component={WelcomeView} />
+    <Route path="/about" component={AboutView} />
+</AppView>;
