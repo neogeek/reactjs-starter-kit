@@ -26,7 +26,7 @@
   "scripts": {
     "start": "npm run build && node dist/server.js",
     "postinstall": "npm run build",
-    "serve": "babel-node server.js --presets es2015,react",
+    "serve": "babel-node src/server.jsx --presets es2015,react",
     "lint": "eslint 'src/**/*.jsx'",
     "build": "npm run build:src && npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --output ./static/css/",
