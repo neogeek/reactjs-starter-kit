@@ -16,32 +16,7 @@ app.use(express.static(path.join(__dirname, '../static')));
 
 app.get('*', (req, res) => {
 
-    match({
-        'location': req.url,
-        routes
-    }, (error, redirectLocation, renderProps) => {
-
-        if (error) {
-
-            res.status(500).send(error.message);
-
-        } else if (redirectLocation) {
-
-            res.redirect(302, redirectLocation.pathname + redirectLocation.search);
-
-        } else if (renderProps) {
-
-            res.status(200).render('default', {
-                'content': renderToString(<RouterContext {...renderProps} />)
-            });
-
-        } else {
-
-            res.status(404).send('Not found');
-
-        }
-
-    });
+    res.status(200).render('default', {'content': ''});
 
 });
 
