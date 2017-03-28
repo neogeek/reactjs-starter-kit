@@ -21,10 +21,11 @@
     "spire-of-babel": "1.2.2"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.14.0"
+    "@neogeek/eslint-config-standards": "1.14.0",
+    "nodemon": "1.11.0"
   },
   "scripts": {
-    "start": "npm run build && node dist/server.js",
+    "start": "nodemon --watch src/ --ext js,jsx --exec npm run serve",
     "postinstall": "npm run build",
     "serve": "babel-node src/server.jsx --presets es2015,react",
     "lint": "eslint 'src/**/*.jsx'",
