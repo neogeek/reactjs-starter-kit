@@ -22,10 +22,11 @@
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "1.14.0",
+    "concurrently": "3.4.0",
     "nodemon": "1.11.0"
   },
   "scripts": {
-    "start": "nodemon --watch src/ --ext js,jsx --exec npm run serve",
+    "start": "npm run build && concurrently --kill-others \"nodemon --watch src/ --ext js,jsx --exec npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
     "postinstall": "npm run build",
     "serve": "babel-node src/server.jsx --presets es2015,react",
     "lint": "eslint 'src/**/*.jsx'",
