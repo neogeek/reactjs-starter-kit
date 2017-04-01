@@ -10,20 +10,20 @@
     "babel-cli": "6.24.0",
     "doxdox": "2.0.2",
     "ejs": "2.5.6",
-    "eslint": "3.17.1",
+    "eslint": "3.18.0",
     "express": "4.15.2",
     "history": "4.6.1",
-    "node-sass": "4.5.1",
+    "node-sass": "4.5.2",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-router": "4.0.0",
     "react-router-dom": "4.0.0",
-    "spire-of-babel": "1.2.2"
+    "spire-of-babel": "1.2.3"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.14.0",
-    "concurrently": "3.4.0",
-    "nodemon": "1.11.0"
+    "@neogeek/eslint-config-standards": "^1.15.0",
+    "concurrently": "^3.4.0",
+    "nodemon": "^1.11.0"
   },
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"nodemon --watch src/ --ext js,jsx --exec npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
