@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Link} from 'react-router-dom';
 
-const AppView = React.createClass({
+class AppView extends React.Component {
 
     render () {
 
@@ -25,6 +25,6 @@ const AppView = React.createClass({
 
     }
 
-});
+}
 
 export default AppView;

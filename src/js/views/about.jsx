@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutView = React.createClass({
+class AboutView extends React.Component {
 
     render () {
 
@@ -10,6 +10,6 @@ const AboutView = React.createClass({
 
     }
 
-});
+}
 
 export default AboutView;

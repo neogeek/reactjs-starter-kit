@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WelcomeView = React.createClass({
+class WelcomeView extends React.Component {
 
     render () {
 
@@ -10,6 +10,6 @@ const WelcomeView = React.createClass({
 
     }
 
-});
+}
 
 export default WelcomeView;

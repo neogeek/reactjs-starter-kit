@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NoMatchView = React.createClass({
+class NoMatchView extends React.Component {
 
     render () {
 
@@ -10,6 +10,6 @@ const NoMatchView = React.createClass({
 
     }
 
-});
+}
 
 export default NoMatchView;
