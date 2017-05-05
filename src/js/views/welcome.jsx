@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class WelcomeView extends React.Component {
+class WelcomeView extends Component {
 
     render () {
 

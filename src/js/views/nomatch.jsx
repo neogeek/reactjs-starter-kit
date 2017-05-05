@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class NoMatchView extends React.Component {
+class NoMatchView extends Component {
 
     render () {
 
