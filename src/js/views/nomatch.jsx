@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 
+import {Text} from '../components';
+
 class NoMatchView extends Component {
+
+    state = {
+        'message': 'No Match'
+    };
 
     render () {
 
         return (
-            <p>No Match</p>
+            <Text content={this.state.message} />
         );
 
     }

@@ -8,12 +8,15 @@
   "license": "MIT",
   "dependencies": {
     "babel-cli": "6.24.1",
+    "babel-preset-latest": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "doxdox": "2.0.2",
     "ejs": "2.5.6",
     "eslint": "3.19.0",
     "express": "4.15.2",
     "history": "4.6.1",
     "node-sass": "4.5.2",
+    "prop-types": "15.5.8",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "react-router": "4.1.1",
@@ -28,14 +31,14 @@
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"nodemon --watch src/ --ext js,jsx --exec npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
     "postinstall": "npm run build",
-    "serve": "babel-node src/server.jsx --presets es2015,react",
+    "serve": "babel-node src/server.jsx --presets latest,stage-2,react",
     "lint": "eslint 'src/**/*.jsx'",
     "build": "npm run build:src && npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --source-map true --output ./static/css/",
     "watch:css": "node-sass ./src/css/ --watch ./src/css/ --output ./static/css/",
-    "build:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --output ./static/js/build.min.js",
-    "watch:js": "spire-of-babel ./src/js/index.jsx --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
-    "build:src": "babel src -d dist --presets es2015,react"
+    "build:js": "spire-of-babel ./src/js/index.jsx --presets latest,stage-2 --bundle --minify --sourcemap --output ./static/js/build.min.js",
+    "watch:js": "spire-of-babel ./src/js/index.jsx --presets latest,stage-2 --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
+    "build:src": "babel src -d dist --presets latest,stage-2,react"
   },
   "keywords": [
     "node",

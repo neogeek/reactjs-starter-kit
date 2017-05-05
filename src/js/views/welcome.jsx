@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 
+import {Text} from '../components';
+
 class WelcomeView extends Component {
+
+    state = {
+        'message': 'Welcome!'
+    };
 
     render () {
 
         return (
-            <p>Welcome!</p>
+            <Text content={this.state.message} />
         );
 
     }
