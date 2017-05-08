@@ -11,7 +11,10 @@ class WelcomeView extends Component {
     render () {
 
         return (
-            <Text content={this.state.message} />
+            <div>
+                <button onClick={this.props.incrementPageViews.bind(null, 'welcome')}>Oh hai</button>
+                <Text content={this.state.message} />
+            </div>
         );
 
     }
