@@ -14,14 +14,4 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, '../static')));
 
-app.get('*', (req, res) => {
-
-    res.status(200).render('default', {
-        'content': renderToString(<StaticRouter context={{}} location={req.url}>
-            {routes}
-        </StaticRouter>)
-    });
-
-});
-
 app.listen(process.env.PORT || '5000');
