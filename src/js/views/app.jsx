@@ -18,7 +18,7 @@ class AppView extends React.Component {
                     </nav>
                 </header>
                 <main>
-                    {this.props.children}
+                    {React.cloneElement(this.props.children, this.props)}
                 </main>
             </div>
         );
