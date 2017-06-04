@@ -36,8 +36,8 @@
     "build": "npm run build:src && npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --source-map true --output ./static/css/",
     "watch:css": "node-sass ./src/css/ --watch ./src/css/ --output ./static/css/",
-    "build:js": "spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap --output ./static/js/build.min.js",
-    "watch:js": "spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
+    "build:js": "NODE_ENV=production spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap | uglifyjs --compress --mangle > ./static/js/build.min.js",
+    "watch:js": "NODE_ENV=production spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
     "build:src": "babel src -d dist --presets env,stage-2,react"
   },
   "keywords": [
