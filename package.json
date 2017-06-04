@@ -20,7 +20,8 @@
     "react-dom": "15.5.4",
     "react-router": "4.1.1",
     "react-router-dom": "4.1.1",
-    "spire-of-babel": "1.3.0"
+    "spire-of-babel": "1.3.0",
+    "uglifyjs": "2.4.11"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^1.15.0",
