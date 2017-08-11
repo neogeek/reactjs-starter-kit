@@ -4,6 +4,7 @@
   ],
   "parser": "babel-eslint",
   "rules": {
+    "class-methods-use-this": 0,
     "no-console": 0,
     "no-magic-numbers": 0,
     "no-unused-vars": 0,
