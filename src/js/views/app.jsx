@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import {Link} from 'react-router-dom';
 
-class AppView extends React.Component {
+class AppView extends Component {
 
     render () {
 
