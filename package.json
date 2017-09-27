@@ -11,7 +11,7 @@
     "babel-preset-env": "1.6.0",
     "babel-preset-stage-2": "6.24.1",
     "ejs": "2.5.7",
-    "express": "4.15.4",
+    "express": "4.15.5",
     "history": "4.7.2",
     "node-sass": "4.5.3",
     "prop-types": "15.5.10",
