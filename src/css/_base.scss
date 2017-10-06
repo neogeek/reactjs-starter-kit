@@ -1,6 +1,11 @@
-* {
-    margin: 0; padding: 0;
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
 body {
@@ -14,7 +19,7 @@ body {
 
 h1, h2, h3 {
     font-weight: normal;
-    line-height: 1.3rem;
+    line-height: 1.3;
 }
 
 h1, h2, h3, p {
