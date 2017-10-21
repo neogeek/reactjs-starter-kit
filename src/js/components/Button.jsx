@@ -26,7 +26,9 @@ class Button extends Component {
     render () {
 
         return (
-            <a href={this.state.href} className="button">{this.state.label}</a>
+            <a href={this.state.href} className="button">
+                {this.state.label}
+            </a>
         );
 
     }

@@ -17,9 +17,11 @@ app.use(express.static(path.join(__dirname, '../static')));
 app.get('*', (req, res) => {
 
     res.status(200).render('default', {
-        'content': renderToString(<StaticRouter context={{}} location={req.url}>
-            {routes}
-        </StaticRouter>)
+        'content': renderToString(
+            <StaticRouter context={{}} location={req.url}>
+                {routes}
+            </StaticRouter>
+        )
     });
 
 });

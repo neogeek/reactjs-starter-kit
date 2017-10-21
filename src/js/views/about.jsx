@@ -4,9 +4,7 @@ class AboutView extends Component {
 
     render () {
 
-        return (
-            <p>About React.js Starter Kit</p>
-        );
+        return <p>About React.js Starter Kit</p>;
 
     }
 

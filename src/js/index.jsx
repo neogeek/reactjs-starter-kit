@@ -10,8 +10,6 @@ const history = createBrowserHistory();
 import Routes from './routes';
 
 ReactDOM.hydrate(
-    <Router history={history}>
-        {Routes}
-    </Router>,
+    <Router history={history}>{Routes}</Router>,
     document.getElementById('site-wrapper')
 );

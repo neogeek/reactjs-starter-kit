@@ -4,9 +4,7 @@ class NoMatchView extends Component {
 
     render () {
 
-        return (
-            <p>No Match</p>
-        );
+        return <p>No Match</p>;
 
     }
 
