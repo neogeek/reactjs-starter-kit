@@ -9,7 +9,7 @@ const history = createBrowserHistory();
 
 import Routes from './routes';
 
-ReactDOM.render(
+ReactDOM.hydrate(
     <Router history={history}>
         {Routes}
     </Router>,
