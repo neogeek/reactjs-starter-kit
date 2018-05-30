@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "This repo is a starter kit for working with React.js and ES6.",
   "engines": {
-    "node": ">=8.0"
+    "node": ">=10.0"
   },
   "license": "MIT",
   "dependencies": {
