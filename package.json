@@ -20,7 +20,8 @@
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
     "spire-of-babel": "1.3.0",
-    "uglify-js": "3.3.28"
+    "uglify-js": "3.3.28",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "^2.0.0",
@@ -39,7 +40,9 @@
     "watch:css": "node-sass ./src/css/ --include-path node_modules/ --watch ./src/css/ --output ./static/css/",
     "build:js": "NODE_ENV=production spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap | uglifyjs --compress --mangle > ./static/js/build.min.js",
     "watch:js": "NODE_ENV=production spire-of-babel ./src/js/index.jsx --presets env,stage-2 --bundle --minify --sourcemap --watch './src/js/**/*.jsx' --output ./static/js/build.min.js",
-    "build:src": "babel src -d dist --presets env,stage-2,react"
+    "build:src": "babel src -d dist --presets env,stage-2,react",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "node",
@@ -53,5 +56,6 @@
     "type": "git",
     "url": "git://github.com/neogeek/reactjs-starter-kit.git"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
