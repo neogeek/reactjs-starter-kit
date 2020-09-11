@@ -23,17 +23,14 @@
     "uglify-js": "3.3.28"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "^2.0.0",
     "concurrently": "^3.5.1",
     "doxdox": "^2.0.3",
-    "eslint": "^4.19.1",
     "nodemon": "^1.17.5"
   },
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"nodemon --watch src/ --ext js,jsx --exec npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
     "postinstall": "npm run build",
     "serve": "babel-node src/server.jsx --presets env,stage-2,react",
-    "lint": "eslint 'src/**/*.jsx'",
     "build": "npm run build:src && npm run build:css && npm run build:js",
     "build:css": "node-sass ./src/css/ --include-path node_modules/ --source-map true --output ./static/css/",
     "watch:css": "node-sass ./src/css/ --include-path node_modules/ --watch ./src/css/ --output ./static/css/",
@@ -46,8 +43,7 @@
     "babel",
     "express",
     "react",
-    "sass",
-    "eslint"
+    "sass"
   ],
   "repository": {
     "type": "git",
